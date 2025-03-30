@@ -16,22 +16,22 @@ const ContactanosPage = () => <Home pageName="Contáctanos" />;
 const AsociadosPage = () => <Home pageName="Asociados & Proveedores" />;
 
 function Router() {
-  // Comentamos temporalmente la lógica de visited para facilitar las pruebas
-  // const [visited, setVisited] = useState(() => {
-  //   return sessionStorage.getItem('visited') === 'true';
-  // });
+  const [visited, setVisited] = useState(() => {
+    return sessionStorage.getItem('visited') === 'true';
+  });
 
-  // useEffect(() => {
-  //   // Establecer que el usuario ya vio la animación
-  //   sessionStorage.setItem('visited', 'true');
-  // }, []);
+  useEffect(() => {
+    // Establecer que el usuario ya vio la animación
+    sessionStorage.setItem('visited', 'true');
+  }, []);
 
   return (
     <Switch>
       <Route path="/">
         {() => {
-          // Siempre muestra la página de carga para pruebas
-          return <LoadingPage />;
+          // Cambiado para mostrar el Home en vez de la página de carga
+          return <HomePage />;
+          // Para volver a habilitar la página de carga cuando se accede por primera vez
           // if (!visited) {
           //   return <LoadingPage />;
           // } else {
