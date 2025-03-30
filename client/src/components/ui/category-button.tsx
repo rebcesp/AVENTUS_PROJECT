@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { motion } from "framer-motion";
+import { Link } from "wouter";
 
 interface CategoryButtonProps {
   id: string;
@@ -8,14 +9,17 @@ interface CategoryButtonProps {
 
 const CategoryButton: FC<CategoryButtonProps> = ({ id, label }) => {
   return (
-    <motion.a
-      href={`#${id}`}
-      className="block border border-black py-3 text-center font-medium transition-all hover:bg-gray-100"
+    <motion.div
       whileHover={{ scale: 1.01 }}
       whileTap={{ scale: 0.99 }}
     >
-      {label}
-    </motion.a>
+      <Link 
+        href={`/${id}`}
+        className="block border border-black py-3 text-center font-medium transition-all hover:bg-gray-100"
+      >
+        {label}
+      </Link>
+    </motion.div>
   );
 };
 
