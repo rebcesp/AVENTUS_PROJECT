@@ -27,19 +27,19 @@ const Menu: FC<MenuProps> = ({ closeMenu }) => {
 
   return (
     <motion.div 
-      className="fixed inset-0 bg-white z-10 flex flex-col p-8"
+      className="fixed inset-0 bg-white z-20 flex flex-col p-8"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3 }}
     >
-      <div className="flex justify-end mb-6">
+      <div className="flex justify-center mb-8">
         <button 
           onClick={closeMenu}
           className="focus:outline-none"
           aria-label="Close menu"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
@@ -92,13 +92,6 @@ const Menu: FC<MenuProps> = ({ closeMenu }) => {
           ))}
         </div>
       </nav>
-      
-      {/* Floating button */}
-      <div className="fixed bottom-6 right-6">
-        <div className="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center">
-          W
-        </div>
-      </div>
     </motion.div>
   );
 };
