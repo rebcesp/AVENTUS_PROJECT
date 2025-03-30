@@ -6,7 +6,7 @@ import AventusLogo from "@/components/ui/logo";
 
 const FooterSection: FC = () => {
   const currentYear = new Date().getFullYear();
-  
+
   return (
     <footer className="py-12 border-t border-gray-200">
       <div className="max-w-6xl mx-auto px-6">
@@ -21,11 +21,11 @@ const FooterSection: FC = () => {
               <AventusLogo />
             </div>
             <p className="text-gray-700 text-sm">
-              Construimos sueños y creamos legados desde 1995. 
-              Tu socio estratégico en inversiones y desarrollos inmobiliarios.
+              Construimos sueños y creamos legados desde 1995. Tu socio
+              estratégico en inversiones y desarrollos inmobiliarios.
             </p>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -51,7 +51,7 @@ const FooterSection: FC = () => {
               </li>
             </ul>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -77,7 +77,7 @@ const FooterSection: FC = () => {
               </li>
             </ul>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -87,24 +87,27 @@ const FooterSection: FC = () => {
             <h3 className="font-bold mb-4">Contacto</h3>
             <ul className="space-y-3 text-gray-700">
               <li>
-                <a href="mailto:contacto@aventus.mx" className="hover:underline">
-                  contacto@aventus.mx
+                <a
+                  href="mailto:contacto@aventus.bo"
+                  className="hover:underline"
+                >
+                  contacto@aventus.bo
                 </a>
               </li>
               <li>
                 <a href="tel:+52 55 1234 5678" className="hover:underline">
-                  +52 55 1234 5678
+                  +591 762 123 12
                 </a>
               </li>
               <li>
-                <p>Av. Paseo de la Reforma 296, Juárez, CDMX</p>
+                <p>Av. San Martin, Equipetrol, Santa Cruz de la Sierra</p>
               </li>
             </ul>
           </motion.div>
         </div>
-        
+
         <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <motion.p 
+          <motion.p
             className="text-sm text-gray-600 mb-4 md:mb-0"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -113,24 +116,36 @@ const FooterSection: FC = () => {
           >
             © {currentYear} Aventus. Todos los derechos reservados.
           </motion.p>
-          
-          <motion.div 
+
+          <motion.div
             className="flex space-x-4"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <a href="#" className="text-gray-600 hover:text-black transition-colors">
+            <a
+              href="#"
+              className="text-gray-600 hover:text-black transition-colors"
+            >
               <Instagram size={20} />
             </a>
-            <a href="#" className="text-gray-600 hover:text-black transition-colors">
+            <a
+              href="#"
+              className="text-gray-600 hover:text-black transition-colors"
+            >
               <Twitter size={20} />
             </a>
-            <a href="#" className="text-gray-600 hover:text-black transition-colors">
+            <a
+              href="#"
+              className="text-gray-600 hover:text-black transition-colors"
+            >
               <Linkedin size={20} />
             </a>
-            <a href="#" className="text-gray-600 hover:text-black transition-colors">
+            <a
+              href="#"
+              className="text-gray-600 hover:text-black transition-colors"
+            >
               <Facebook size={20} />
             </a>
           </motion.div>

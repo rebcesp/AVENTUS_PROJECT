@@ -8,7 +8,7 @@ const ContactSection: FC = () => {
   return (
     <section className="py-16 border-t border-gray-200">
       <div className="max-w-4xl mx-auto px-6">
-        <motion.h2 
+        <motion.h2
           className="text-2xl font-bold mb-10 text-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -17,7 +17,7 @@ const ContactSection: FC = () => {
         >
           Contacto
         </motion.h2>
-        
+
         <div className="grid md:grid-cols-2 gap-12">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -27,34 +27,41 @@ const ContactSection: FC = () => {
           >
             <h3 className="text-xl font-bold mb-4">Únete a Aventus</h3>
             <p className="text-gray-700 mb-6">
-              Estamos construyendo el futuro inmobiliario de México. Si buscas una oportunidad para crecer 
-              profesionalmente y formar parte de proyectos innovadores, ¡queremos conocerte!
+              Estamos construyendo el futuro inmobiliario de Bolivia. Si buscas
+              una oportunidad para crecer profesionalmente y formar parte de
+              proyectos innovadores, ¡queremos conocerte!
             </p>
-            
+
             <div className="space-y-4">
               <div className="flex items-center">
                 <span className="font-medium mr-2">Correo:</span>
-                <a href="mailto:contacto@aventus.mx" className="text-gray-700 hover:underline">
-                  contacto@aventus.mx
+                <a
+                  href="mailto:contacto@aventus.mx"
+                  className="text-gray-700 hover:underline"
+                >
+                  contacto@aventus.bo
                 </a>
               </div>
-              
+
               <div className="flex items-center">
                 <span className="font-medium mr-2">Teléfono:</span>
-                <a href="tel:+52 55 1234 5678" className="text-gray-700 hover:underline">
-                  +52 55 1234 5678
+                <a
+                  href="tel:+52 55 1234 5678"
+                  className="text-gray-700 hover:underline"
+                >
+                  +591 762 123 12
                 </a>
               </div>
-              
+
               <div className="flex items-center">
                 <span className="font-medium mr-2">Dirección:</span>
                 <span className="text-gray-700">
-                  Av. Paseo de la Reforma 296, Juárez, CDMX
+                  Av. San Martin, Equipetrol, Santa Cruz de la Sierra
                 </span>
               </div>
             </div>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -63,38 +70,38 @@ const ContactSection: FC = () => {
           >
             <form className="space-y-4">
               <div>
-                <Input 
-                  type="text" 
-                  placeholder="Nombre completo" 
+                <Input
+                  type="text"
+                  placeholder="Nombre completo"
                   className="border-black focus:ring-black"
                 />
               </div>
-              
+
               <div>
-                <Input 
-                  type="email" 
-                  placeholder="Correo electrónico" 
+                <Input
+                  type="email"
+                  placeholder="Correo electrónico"
                   className="border-black focus:ring-black"
                 />
               </div>
-              
+
               <div>
-                <Input 
-                  type="tel" 
-                  placeholder="Teléfono" 
+                <Input
+                  type="tel"
+                  placeholder="Teléfono"
                   className="border-black focus:ring-black"
                 />
               </div>
-              
+
               <div>
-                <Textarea 
-                  placeholder="Mensaje" 
+                <Textarea
+                  placeholder="Mensaje"
                   className="border-black focus:ring-black min-h-[120px]"
                 />
               </div>
-              
-              <Button 
-                type="submit" 
+
+              <Button
+                type="submit"
                 className="w-full bg-black text-white hover:bg-gray-800 transition-colors"
               >
                 Enviar mensaje
