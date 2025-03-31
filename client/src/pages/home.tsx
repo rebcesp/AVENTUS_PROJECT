@@ -1,16 +1,16 @@
 import { FC } from "react";
-import Navbar from "@/components/layout/navbar";
-import FloatingButton from "@/components/ui/floating-button";
+import Navbar from "../components/layout/navbar";
+import FloatingButton from "../components/ui/floating-button";
 import { motion } from "framer-motion";
 
 // Import all sections
-import HeroSection from "@/components/sections/hero-section";
-import ServicesSection from "@/components/sections/services-section";
-import AboutSection from "@/components/sections/about-section";
-import StatsSection from "@/components/sections/stats-section";
-import JoinSection from "@/components/sections/join-section";
-import ContactSection from "@/components/sections/contact-section";
-import FooterSection from "@/components/sections/footer-section";
+import HeroSection from "../components/sections/hero-section";
+import ServicesSection from "../components/sections/services-section";
+import AboutSection from "../components/sections/about-section";
+import StatsSection from "../components/sections/stats-section";
+import JoinSection from "../components/sections/join-section";
+import ContactSection from "../components/sections/contact-section";
+import FooterSection from "../components/sections/footer-section";
 
 interface HomeProps {
   pageName?: string;

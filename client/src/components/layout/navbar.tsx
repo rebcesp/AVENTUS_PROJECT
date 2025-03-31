@@ -1,6 +1,6 @@
 import { FC, useState } from "react";
-import AventusLogo from "@/components/ui/logo";
-import Menu from "@/components/layout/menu";
+import AventusLogo from "../ui/logo";
+import Menu from "./menu";
 import { AnimatePresence } from "framer-motion";
 
 const Navbar: FC = () => {
