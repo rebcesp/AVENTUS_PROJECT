@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
+import { Button } from "../ui/button";
 import { Wrench, Building, BarChart4, GitMerge } from "lucide-react";
 
 interface ServicioConstructoraProps {
